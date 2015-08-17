@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  
+  div
+    form(name="sendPhoto", action="/sendPhoto", method="post")
+      input(type="text", name="photoText")
+      input(type="submit", value="Send Photo")
+
